@@ -25,3 +25,15 @@ window.onscroll = function () {
     }
 }
 
+var loading;
+
+function ShowPages() {
+    loading = setTimeout(ShowLoad, 5000);
+
+}
+
+function ShowLoad() {
+    document.querySelector(".loading1").style.display = "none";
+    document.querySelector(".pages").style.display = "block";
+
+}

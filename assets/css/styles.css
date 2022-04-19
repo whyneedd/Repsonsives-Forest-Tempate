@@ -61,6 +61,83 @@ html {
   position: relative;
 }
 
+/*=============== PAGES LOAD ===============*/
+.loading1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.8s;
+}
+
+.loader {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #333232;
+  z-index: 9999;
+}
+
+.roxload {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  margin: 8px;
+  background-color: #FFC300;
+  animation: Loading1 0.8s linear infinite;
+}
+
+.box:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.box:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.box:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.box:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes Loading1 {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 60px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+/*=============== PAGE ===============*/
+.pages {
+  display: none;
+}
+
 /*=============== NAV ===============*/
 .nav-bar {
   min-width: 100%;
@@ -201,9 +278,15 @@ html {
   justify-content: center;
   width: 270px;
   height: 210px;
-  margin: 8px;
+  margin: 13px;
   border-radius: 8px;
   background-color: #fff;
+  transition: 0.8s ease-out;
+}
+
+.card-feat:hover {
+  transform: scale(1.08);
+  box-shadow: 5px 5px 5px rgb(26, 107, 240);
 }
 
 .card-feat .title-box-feat {
