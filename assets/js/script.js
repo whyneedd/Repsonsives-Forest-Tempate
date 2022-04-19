@@ -9,6 +9,12 @@ humbger.onclick = function () {
 
 }
 
+humbger__menu.onclick = function () {
+    humbger__menu.classList.toggle("active");
+    humbger.classList.toggle("active");
+
+}
+
 window.onscroll = function () {
     var scrolY = window.scrollY;
 
