@@ -422,7 +422,7 @@ html {
     display: flex;
     top: 56%;
     left: 50%;
-    font-size: 40px;
+    font-size: 38px;
     transform: translate(-50%);
     flex-direction: column;
   }
