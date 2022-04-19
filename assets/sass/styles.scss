@@ -1,0 +1,461 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+:root {
+      /*========== Font and typography ==========*/
+    --body-font: "Nunito", sans-serif;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-black: 900;
+     /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+      /*========== Colors ==========*/
+    --first-color: hsl(var(--hue), 91%, 54%);
+    --first-color-alt: hsl(var(--hue), 91%, 50%);
+    --title-color: hsl(var(--hue), 4%, 100%);
+    --text-color: hsl(var(--hue), 4%, 85%);
+    --text-color-light: hsl(var(--hue), 4%, 55%);
+
+}
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 200vh;
+    background-color: #333332;
+    font-family: var(--body-font);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+::selection {
+    color: rgb(26, 107, 240);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+
+/*=============== HEADER ===============*/
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/assets/fonts/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+}
+
+/*=============== NAV ===============*/
+.nav-bar {
+    width: 100%;
+    height: 66px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    transition: .8s;
+
+}
+
+.nav-bar.scroll-active {
+    background-color: rgb(26, 107, 240, .8);
+
+}
+
+.nav-bar .logo {
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-bar ul li {
+    list-style: none;
+    display: flex;
+    margin: 6px;
+
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    transition: .8s;
+}
+
+.nav-bar ul li a:hover {
+    color: #000;
+}
+
+/*=============== HOME ===============*/
+.content {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    top: 21%;
+    left: 24%;
+
+}
+
+.content-rol {
+    font-size: 50px;
+    color: #fff;
+}
+
+.content-col-btn {
+    position: relative;
+    font-size: 20px;
+    padding: 8px 65px;
+    border-radius: 9em;
+    color: #000;
+    font-weight: bold;
+    background-color: #ffff;
+    transition: .8s;
+}
+
+.content-col-btn:hover {
+    /* transform: scale(1.08); */
+    background-color: rgb(18, 102, 228);
+}
+
+.content-col-btn span {
+    position: absolute;
+    display: inline-block;
+    transition: .8s;
+    right: 0px;
+    top: 10px;
+    opacity: 0;
+}
+
+.content-col-btn:hover > span {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    top: 10px;
+    opacity: 1;
+    right: 30px;
+    transition: .8s;
+
+}
+
+/*=============== CARACTERISTIQUES ===============*/
+.features {
+    /* padding-top: 100px; */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212;
+    position: relative;
+
+}
+
+.features .title-pp-feat {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+    color: #fff;
+
+}
+
+.container-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+}
+
+.row-features {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.card-feat {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: calc(300px - 30px);
+    height: calc(240px - 30px);
+    margin: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.card-feat .title-box-feat {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+
+.card-feat .content-feat {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 4%;
+
+}
+
+/*=============== FOOTER ===============*/
+.footer2 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    /* bottom: 0px; */
+
+}
+
+.footer {
+    background-color: rgb(26, 107, 240);
+    padding: 60px 0;
+
+}
+
+.footer .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
+.footer h4::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: red;
+    transition: .8s;
+
+}
+
+.footer .card-list {
+    list-style: none;
+
+}
+
+.footer .card-list li {
+    list-style: none;
+    display: flex;
+
+}
+
+.footer .card-list li a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    transition: .4s;
+
+}
+
+.footer .card-list li a:hover {
+    color: rgb(251, 251, 8);
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer .card {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer #search {
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+    padding: 5px;
+    color: #fff;
+}
+
+.footer .card .socials .fa-brands {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    padding: 8px;
+    transition: .8s;
+
+}
+
+.footer .card .socials:hover > .fa-brands {
+    background-color: rgb(251, 251, 8);
+    border-radius: 50px;
+}
+.footer .copyright {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+
+}
+
+.footer .copyright h5 {
+    color: #FFC300;
+    font-size: 18px;
+}
+
+.footer3 {
+    display: none;
+}
+
+
+/*=============== HUMBGER ===============*/
+.humbger {
+    display: none;
+}
+
+/*=============== MOBILE ===============*/
+
+@media screen and (max-width: 1115px) {
+    .nav-bar ul {
+        display: none;
+    }
+    
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .card {
+        margin-bottom: 70px;
+    }
+    .footer .search {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .features {
+        min-height: 200vh;
+    }
+
+    .content {
+        left: 6%;
+    }
+
+    .copyright {
+        left: 5%;
+    }
+    .humbger {
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 35px;
+        right: 10px;
+        align-items: center;
+
+        appearance: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .humbger .bar,
+    .humbger::before,
+    .humbger::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        border-radius: 5rem;
+        transition: .8s;
+    }
+
+    .humbger.active::before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .humbger.active::after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .humbger.active .bar {
+        opacity: 0;
+    }
+
+    .footer3 {
+        width: 100%;
+        min-height: 66px;
+        background-color: rgb(26, 107, 240);
+        position: relative;
+
+    }
+
+    .footer3 .footer3-container {
+        width: 300px;
+        height: 50px;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .footer3 p {
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .features {
+        min-height: 150vh;
+    }   
+}
+
