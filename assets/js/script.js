@@ -1,8 +1,11 @@
 const navy = document.querySelector(".nav-bar");
 const humbger = document.querySelector(".humbger");
+const humbger__menu = document.querySelector(".humbger__menu");
+
 
 humbger.onclick = function () {
     humbger.classList.toggle("active");
+    humbger__menu.classList.toggle("active");
 
 }
 
