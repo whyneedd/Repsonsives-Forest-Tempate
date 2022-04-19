@@ -34,7 +34,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    min-height: 200vh;
+    min-height: 100vh;
     background-color: #333332;
     font-family: var(--body-font);
     box-sizing: border-box;
@@ -343,7 +343,7 @@ html {
 .footer .copyright {
     position: relative;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 50px;
 
 }
@@ -362,9 +362,11 @@ html {
 .humbger {
     display: none;
 }
+
 .humbger__menu {
-   display: none;
+    display: none;
 }
+
 /*=============== MOBILE ===============*/
 
 @media screen and (max-width: 1115px) {
@@ -393,10 +395,6 @@ html {
 
     .content {
         left: 6%;
-    }
-
-    .copyright {
-        left: 5%;
     }
 
     .humbger {
@@ -471,6 +469,7 @@ html {
         display: block;
         left: 0;
     }
+
     .footer3 {
         width: 100%;
         min-height: 66px;
