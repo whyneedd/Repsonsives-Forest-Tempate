@@ -17,6 +17,7 @@
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
+  
 }
 
 /*=============== BASE ===============*/
@@ -25,6 +26,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+
 }
 
 body,
@@ -36,19 +38,23 @@ html {
   font-family: var(--body-font);
   box-sizing: border-box;
   scroll-behavior: smooth;
+
 }
 
 ::selection {
   color: rgb(26, 107, 240);
+
 }
 
 ::-webkit-scrollbar {
   width: 8px;
+
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #121212;
   border-radius: 50px;
+
 }
 
 /*=============== HEADER ===============*/
@@ -60,6 +66,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
 }
 
 /*=============== PAGES LOAD ===============*/
@@ -68,6 +75,7 @@ html {
   width: 100%;
   min-height: 100vh;
   transition: 0.8s;
+
 }
 
 .loader {
@@ -79,6 +87,7 @@ html {
   align-items: center;
   background-color: #333232;
   z-index: 9999;
+
 }
 
 .roxload {
@@ -89,6 +98,7 @@ html {
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
+
 }
 
 .box {
@@ -101,26 +111,32 @@ html {
   margin: 8px;
   background-color: #FFC300;
   animation: Loading1 0.8s linear infinite;
+
 }
 
 .box:nth-child(1) {
   animation-delay: 0.1s;
+
 }
 
 .box:nth-child(2) {
   animation-delay: 0.2s;
+
 }
 
 .box:nth-child(3) {
   animation-delay: 0.3s;
+
 }
 
 .box:nth-child(4) {
   animation-delay: 0.4s;
+
 }
 
 .box:nth-child(5) {
   animation-delay: 0.5s;
+
 }
 
 @keyframes Loading1 {
@@ -140,6 +156,7 @@ html {
 /*=============== PAGE ===============*/
 .pages {
   display: none;
+
 }
 
 /*=============== NAV ===============*/
@@ -152,7 +169,7 @@ html {
   display: flex;
   position: fixed;
   z-index: 9999;
-  transition: 0.8s ease-out;
+  transition: 0.3s ease-out;
 
 }
 
@@ -186,7 +203,7 @@ html {
   display: block;
   color: #fff;
   font-weight: bold;
-  transition: 0.8s;
+  transition: 0.3s;
 
 }
 
@@ -204,16 +221,19 @@ html {
   padding: 30px;
   top: 21%;
   left: 8%;
+
 }
 
 .content-rol {
   font-size: 50px;
   color: #fff;
+
 }
 
 .content .content-rol h2 {
   font-weight: bold;
   text-transform: uppercase;
+
 }
 
 .content-col-btn {
@@ -224,12 +244,13 @@ html {
   color: #000;
   font-weight: bold;
   background-color: white;
-  transition: 0.8s;
+  transition: 0.3s;
+
 }
 
 .content-col-btn:hover {
-  /* transform: scale(1.08); */
   background-color: rgb(18, 102, 228);
+
 }
 
 .content-col-btn span {
@@ -239,6 +260,7 @@ html {
   right: 0px;
   top: 10px;
   opacity: 0;
+
 }
 
 .content-col-btn:hover>span {
@@ -249,15 +271,16 @@ html {
   opacity: 1;
   right: 30px;
   transition: 0.8s;
+
 }
 
 /*=============== CARACTERISTIQUES ===============*/
 .features {
-  /* padding-top: 100px; */
   width: 100%;
   min-height: 100vh;
   background-color: #121212;
   position: relative;
+
 }
 
 .features .title-pp-feat {
@@ -267,6 +290,7 @@ html {
   justify-content: center;
   font-size: 38px;
   color: #fff;
+
 }
 
 .container-features {
@@ -274,6 +298,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+
 }
 
 .row-features {
@@ -285,6 +310,7 @@ html {
   height: 500px;
   padding: 10px;
   margin: auto;
+
 }
 
 .card-feat {
@@ -296,12 +322,14 @@ html {
   margin: 13px;
   border-radius: 8px;
   background-color: #fff;
-  transition: 0.8s ease-out;
+  transition: 0.3s ease-out;
+
 }
 
 .card-feat:hover {
   transform: scale(1.08);
   box-shadow: 5px 5px 5px rgb(26, 107, 240);
+
 }
 
 .card-feat .title-box-feat {
@@ -312,6 +340,7 @@ html {
   width: 100%;
   font-size: 23px;
   font-weight: bold;
+
 }
 
 .card-feat .content-feat {
@@ -320,6 +349,7 @@ html {
   justify-content: center;
   top: 50%;
   left: 4%;
+
 }
 
 /*=============== FOOTER ===============*/
@@ -327,17 +357,19 @@ html {
   position: absolute;
   display: block;
   width: 100%;
-  /* bottom: 0px; */
+
 }
 
 .footer {
   background-color: rgb(26, 107, 240);
   padding: 60px 0;
+
 }
 
 .footer .container {
   max-width: 1170px;
   margin: auto;
+
 }
 
 .footer h4 {
@@ -345,6 +377,7 @@ html {
   color: #fff;
   font-size: 23px;
   padding-bottom: 20px;
+
 }
 
 .footer h4::after {
@@ -353,16 +386,19 @@ html {
   width: 20%;
   height: 2px;
   background-color: red;
-  transition: 0.8s;
+  transition: 0.3s;
+
 }
 
 .footer .card-list {
   list-style: none;
+
 }
 
 .footer .card-list li {
   list-style: none;
   display: flex;
+
 }
 
 .footer .card-list li a {
@@ -370,10 +406,12 @@ html {
   color: #fff;
   font-weight: bold;
   transition: 0.4s;
+
 }
 
 .footer .card-list li a:hover {
   color: rgb(251, 251, 8);
+
 }
 
 .footer .row {
@@ -384,6 +422,7 @@ html {
 .footer .card {
   width: 25%;
   padding: 0 15px;
+
 }
 
 .footer #search {
@@ -392,6 +431,7 @@ html {
   border-radius: 50px;
   padding: 5px;
   color: #fff;
+
 }
 
 .footer .card .socials .fa-brands {
@@ -400,11 +440,13 @@ html {
   color: #fff;
   padding: 8px;
   transition: 0.8s;
+
 }
 
 .footer .card .socials:hover>.fa-brands {
   background-color: rgb(251, 251, 8);
   border-radius: 50px;
+
 }
 
 .footer .copyright {
@@ -412,53 +454,64 @@ html {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  
 }
 
 .footer .copyright h5 {
   color: #FFC300;
   font-size: 18px;
+
 }
 
 .footer3 {
   display: none;
+
 }
 
 /*=============== HUMBGER ===============*/
 .humbger {
   display: none;
+
 }
 
 .humbger__menu {
   display: none;
+
 }
 
 /*=============== MOBILE ===============*/
 @media screen and (max-width: 1115px) {
   .nav-bar .nav-navy-list {
     display: none;
+
   }
 
   .footer .row {
     flex-direction: column;
     align-items: center;
+
   }
 
   .footer .card {
     margin-bottom: 70px;
+
   }
 
   .footer .search {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
   }
 
   .features {
     min-height: 200vh;
+
   }
 
   .content {
     left: 6%;
+
   }
 
   .humbger {
@@ -497,6 +550,7 @@ html {
   }
 
   .humbger.active .bar {
+    transform: translateX(60px);
     opacity: 0;
   }
 
