@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
 :root {
   /*========== Font and typography ==========*/
   --body-font: "Nunito", sans-serif;
@@ -46,7 +47,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0);
+  background-color: #121212;
   border-radius: 50px;
 }
 
@@ -126,13 +127,16 @@ html {
   0% {
     height: 0px;
   }
+
   50% {
     height: 60px;
   }
+
   100% {
     height: 0px;
   }
 }
+
 /*=============== PAGE ===============*/
 .pages {
   display: none;
@@ -141,19 +145,20 @@ html {
 /*=============== NAV ===============*/
 .nav-bar {
   min-width: 100%;
-  height: 68px;
-  padding: 0px;
-  margin: 0px;
-  justify-content: space-around;
+  height: 0px;
+  padding: 30px 100px;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   position: fixed;
   z-index: 9999;
   transition: 0.8s ease-out;
+
 }
 
 .nav-bar.scroll-active {
-  background-color: rgba(26, 107, 240, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 .nav-bar .logo {
@@ -161,17 +166,20 @@ html {
   font-size: 2em;
   color: #fff;
   font-weight: bold;
+
 }
 
 .nav-bar ul {
   display: flex;
   list-style: none;
+
 }
 
 .nav-bar ul li {
   list-style: none;
   display: flex;
   margin: 6px;
+
 }
 
 .nav-bar ul li a {
@@ -179,10 +187,12 @@ html {
   color: #fff;
   font-weight: bold;
   transition: 0.8s;
+
 }
 
 .nav-bar ul li a:hover {
-  color: #000;
+  color: rgb(251, 251, 8);
+
 }
 
 /*=============== HOME ===============*/
@@ -193,7 +203,7 @@ html {
   height: 200px;
   padding: 30px;
   top: 21%;
-  left: 24%;
+  left: 8%;
 }
 
 .content-rol {
@@ -201,11 +211,16 @@ html {
   color: #fff;
 }
 
+.content .content-rol h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .content-col-btn {
   position: relative;
   font-size: 20px;
   padding: 8px 65px;
-  border-radius: 9em;
+  border-radius: 9px;
   color: #000;
   font-weight: bold;
   background-color: white;
@@ -226,7 +241,7 @@ html {
   opacity: 0;
 }
 
-.content-col-btn:hover > span {
+.content-col-btn:hover>span {
   position: absolute;
   display: inline-block;
   align-items: center;
@@ -387,7 +402,7 @@ html {
   transition: 0.8s;
 }
 
-.footer .card .socials:hover > .fa-brands {
+.footer .card .socials:hover>.fa-brands {
   background-color: rgb(251, 251, 8);
   border-radius: 50px;
 }
@@ -461,8 +476,8 @@ html {
   }
 
   .humbger .bar,
-.humbger::before,
-.humbger::after {
+  .humbger::before,
+  .humbger::after {
     content: "";
     display: block;
     width: 100%;
@@ -536,6 +551,7 @@ html {
     font-weight: bold;
   }
 }
+
 @media screen and (max-width: 480px) {
   .features {
     min-height: 150vh;
